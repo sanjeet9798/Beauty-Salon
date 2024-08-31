@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: #3c3b3b;
+    color:rgb(255, 255, 255);
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.welcome {   
+    /* background: linear-gradient(rgb(30, 188, 237),rgba(0, 0, 255, 0.619),rgb(119, 71, 224),rgba(115, 0, 255, 0.537)); */
+    background-image: radial-gradient(circle, rgba(255, 123, 0, 0.715), rgba(255, 255, 0, 0.458), pink);
+    background-size: cover;
+    text-align: center;
+    color: #333;
+    padding: 100px 0;
+}
+.hero h1 {
+    font-size: 36px;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    /* background-color: #f05a5a; */
+    background-color: rgba(208, 81, 220, 0.451);
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px 100px / 100px;   
+}
+.services {
+    padding: 50px 0;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/236x/af/d1/b1/afd1b12a0f091f15c89b25bb2d7e52d3.jpg); 
+    background-size: cover; 
+    height: 100%;
+}
+.service {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.service img {
+    max-width: 100%;
+    border: 1px solid #c56060;
+    border-radius: 5px;
+}
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.jpg:hover{
+    background-color: #999;
+    box-shadow: 5px 5px 10px #1e34b3;
+    transition: 0.5s ease;
+ 
+}
+
+li :hover{
+    color: aqua;
+    transition: 1s ease;
+    letter-spacing: 1px;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #b51717;
+}
+.pro{
+    opacity: 0;
+    transform:translateY(90px) ;
+    animation: moveup 2s linear forwards;
+}
+.logo{
+      height: 120px;
+      position: relative;
+      top: 30px;
+      border-radius: 50%;
+
+}
+
+
+@keyframes moveup{
+    100%  {opacity: 1;
+      transform: translateY(0px);}
+  }
+  .contact a{
+    text-decoration: none !important;
+    color: #fff;
+  }
+  .welcome button a{
+    text-decoration: none !important;
+    color: #fff;
+
+  }
